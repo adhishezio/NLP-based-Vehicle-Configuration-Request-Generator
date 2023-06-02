@@ -1,0 +1,94 @@
+{
+  "lang":"en",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.5.2,<3.6.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"Unknown",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+      "AVAILABLE PACKAGES",
+      "DATE",
+      "ENGINE CONFIGURATION",
+      "OPERATORS",
+      "REGION",
+      "ROOF CONFIGURATION",
+      "SALES DESCRIPTION",
+      "STEERING WHEEL CONFIGURATION"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner"
+  ],
+  "components":[
+    "tok2vec",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":0.9529411765,
+    "ents_p":0.9529411765,
+    "ents_r":0.9529411765,
+    "ents_per_type":{
+      "SALES DESCRIPTION":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "OPERATORS":{
+        "p":0.9655172414,
+        "r":0.9655172414,
+        "f":0.9655172414
+      },
+      "ROOF CONFIGURATION":{
+        "p":0.9473684211,
+        "r":1.0,
+        "f":0.972972973
+      },
+      "REGION":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "AVAILABLE PACKAGES":{
+        "p":0.8333333333,
+        "r":0.8333333333,
+        "f":0.8333333333
+      },
+      "ENGINE CONFIGURATION":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "STEERING WHEEL CONFIGURATION":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "DATE":{
+        "p":1.0,
+        "r":0.5,
+        "f":0.6666666667
+      }
+    },
+    "tok2vec_loss":136.6341404953,
+    "ner_loss":2724.3253486912
+  }
+}
